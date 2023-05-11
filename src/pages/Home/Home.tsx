@@ -34,6 +34,10 @@ export const Home = () => {
                     <InputFC
                         label="Coloque sua frase"
                     />
+
+                    <InputFC
+                        label="Coloque sua chave"
+                    />
                 </Box>
             </Styled.Inputs>
         </Styled.Home>

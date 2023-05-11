@@ -18,7 +18,13 @@ export const Inputs = styled(Box)(({ theme }) => ({
         display: 'flex',
         alignItems: 'center',
         gap: theme.spacing(1)
-    }
+    },
+
+    ".inputs": {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: theme.spacing(3)
+    },
 }))
 
 export const Input = styled(Box)(({ theme }) => ({
