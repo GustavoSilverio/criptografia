@@ -7,10 +7,13 @@ export const Footer = styled('footer')(({ theme }) => ({
     justifyContent: 'center',
 
     backgroundColor: theme.palette.primary.main,
-    color: theme.palette.secondary.main,
-    fontSize: 14,
-    fontWeight: 700,
-
     width: '100%',
-    padding: theme.spacing(2, 1.25, 4)
+    padding: theme.spacing(2, 1.25, 4),
+	
+	h1: {
+		fontSize: 14,
+		fontWeight: 700,
+		color: theme.palette.secondary.main,
+		textAlign: 'center',
+	}
 }))

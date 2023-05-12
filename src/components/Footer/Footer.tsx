@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import * as Styled from './Footer.styled'
 
 export const Footer = () => {
@@ -7,7 +8,9 @@ export const Footer = () => {
 
     return (
         <Styled.Footer>
-            <h1>{ano} © Gustavo Silvério & Breno Cardozo</h1>
+            <Typography variant='h1'>
+				{ano} © Gustavo Silvério & Breno Cardozo
+			</Typography>
         </Styled.Footer>
     )
 }
