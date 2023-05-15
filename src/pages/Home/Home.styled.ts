@@ -1,6 +1,5 @@
 import { styled } from '@mui/material/styles'
 import { Box, Button, Stack, Modal } from '@mui/material'
-import { Form } from 'formik'
 
 export const Home = styled(Stack)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -10,7 +9,7 @@ export const Home = styled(Stack)(({ theme }) => ({
 	width: '100%',
 }))
 
-export const Inputs = styled(Form)(({ theme }) => ({
+export const Inputs = styled('form')(({ theme }) => ({
     display: 'flex',
     gap: theme.spacing(3),
     flexDirection: 'column',
