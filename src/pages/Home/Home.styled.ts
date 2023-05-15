@@ -1,5 +1,6 @@
 import { styled } from '@mui/material/styles'
-import { Box, Button, Stack } from '@mui/material'
+import { Box, Button, Stack, Modal } from '@mui/material'
+import { Form } from 'formik'
 
 export const Home = styled(Stack)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -9,7 +10,7 @@ export const Home = styled(Stack)(({ theme }) => ({
 	width: '100%',
 }))
 
-export const Inputs = styled(Box)(({ theme }) => ({
+export const Inputs = styled(Form)(({ theme }) => ({
     display: 'flex',
     gap: theme.spacing(3),
     flexDirection: 'column',
@@ -47,6 +48,12 @@ export const Input = styled(Box)(({ theme }) => ({
 		width: '100%',
         padding: theme.spacing(2, 3),
 		color: theme.palette.grey[100],
+		transition: 'border .1s ease',
+		outline: 'none',
+
+		"&:focus-visible": {
+			border: '1px solid rgb(116, 91, 0, 1)',
+		}
 	}
 }))
 
@@ -64,4 +71,8 @@ export const Botao = styled(Button)(({ theme }) => ({
 		border: '2px solid rgba(209, 163, 0, 1)',
 		backgroundColor: theme.palette.secondary.main,
 	}
+}))
+
+export const ModalWrapper = styled(Modal) (({ theme }) => ({
+	backgroundColor: 'red',
 }))
