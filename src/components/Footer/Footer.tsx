@@ -9,7 +9,7 @@ export const Footer = () => {
     return (
         <Styled.Footer>
             <Typography variant='h1'>
-				{ano} © Gustavo Silvério & Breno Cardozo
+				{ano} © Gustavo Silvério & Breno Cardozo & Julia Granado
 			</Typography>
         </Styled.Footer>
     )
