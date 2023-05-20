@@ -9,8 +9,8 @@ import { CssBaseline } from '@mui/material'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
-			<Layout />
-			<CssBaseline />
+				<Layout />
+				<CssBaseline />
 		</ThemeProvider>
-	</React.StrictMode>,
+	</React.StrictMode>
 )

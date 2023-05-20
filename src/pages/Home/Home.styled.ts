@@ -28,8 +28,37 @@ export const Inputs = styled('form')(({ theme }) => ({
     ".inputs": {
         display: 'flex',
         flexDirection: 'column',
-        gap: theme.spacing(3)
-    },
+        gap: theme.spacing(3),
+	},
+
+	".resultado": {
+		color: theme.palette.grey[100],
+		maxWidth: 360,
+		width: '100%',
+		backgroundColor: 'rgb(40 40 40)',
+		borderRadius: 8,
+		padding: theme.spacing(3),
+		overflowWrap: 'break-word',
+
+		button: {
+			backgroundColor: 'transparent',
+			border: 'none',
+			cursor: 'pointer',
+			marginTop: theme.spacing(2),
+			padding: 0,
+			justifyContent: 'flex-start',
+			
+			span: {
+				color: theme.palette.grey[100],
+				fontSize: 20,
+				display: 'flex',
+			}
+		},
+	},
+
+	".disabled": {
+		display: 'none'
+	}
 }))
 
 export const Input = styled(Box)(({ theme }) => ({
@@ -49,6 +78,11 @@ export const Input = styled(Box)(({ theme }) => ({
 		color: theme.palette.grey[100],
 		transition: 'border .1s ease',
 		outline: 'none',
+
+		"&::placeholder": {
+			color: "rgb(86 86 83)",
+			fontWeight: 500
+		},
 
 		"&:focus-visible": {
 			border: '1px solid rgb(116, 91, 0, 1)',
@@ -73,5 +107,11 @@ export const Botao = styled(Button)(({ theme }) => ({
 }))
 
 export const ModalWrapper = styled(Modal) (({ theme }) => ({
-	backgroundColor: 'red',
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+	backgroundColor: '#fff',
+	padding: theme.spacing(3),
+	maxWidth: 346,
+	width: '100%',
 }))

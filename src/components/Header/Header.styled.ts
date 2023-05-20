@@ -6,6 +6,7 @@ export const Header = styled(Box)(({ theme }) => ({
     color: theme.palette.secondary.main,
     width: '100%',
     display: 'flex',
+	textAlign: 'center',
 
     justifyContent: 'center',
     fontSize: 20,
